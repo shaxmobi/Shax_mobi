@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Neon Background */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, #1a1a2e, #0d0d0d);
+    z-index: -1;
+}
+
+/* Header */
+.hero {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.title {
+    font-size: 3em;
+    background: linear-gradient(90deg, #0ff, #00f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Asosiy kontent */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Shaffof oynalar */
+.glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.glass-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+/* Telegram va Instagram ikonlari */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effekti */
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Telegram ikonkasi */
+.telegram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111646.png');
+}
+
+/* Instagram ikonkasi */
+.instagram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png');
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+}
+
